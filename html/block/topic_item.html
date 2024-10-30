@@ -1,0 +1,8 @@
+<!-- /*                    模板馆专业苹果cms模板下载                            */ -->
+
+<div class="pic"><a href="{$vo|mac_url_topic_detail}"><div class="img-wrapper h lazyload" data-original="{$vo.topic_pic|mac_url_img}"></div>
+        <div class="text">
+          <p>—— {if !empty($vo.topic_rel_vod)}{$vo.topic_rel_vod|explode=',',###|count}{else/}0{/if}个影片 ——</p>
+          <p {if !empty($vo.topic_color)} style="color:#{$vo.topic_color};"{/if}>{$vo.topic_name}</p>
+        </div>
+        </a></div>
